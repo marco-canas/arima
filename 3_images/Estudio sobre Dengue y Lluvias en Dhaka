@@ -1,6 +1,8 @@
 // Mapa Conceptual del Artículo
 digraph {
-	A [label="Estudio sobre Dengue y Lluvias en Dhaka"]
+	A [label="Estudio 
+ sobre Dengue y 
+ Lluvias en Dhaka"]
 	B [label="Introducción"]
 	C [label="Métodos"]
 	D [label=Resultados]
@@ -9,29 +11,44 @@ digraph {
 	A -> C
 	A -> D
 	A -> E
-	B1 [label="Dengue: Enfermedad febril"]
-	B2 [label="Transmisión: Aedes aegypti y Aedes albopictus"]
-	B3 [label="Estacionalidad y Clima"]
+	B1 [label="Dengue: 
+ Enfermedad 
+ febril"]
+	B2 [label="Transmisión: 
+ Aedes aegypti y 
+ Aedes albopictus"]
+	B3 [label="Estacionalidad y
+  Clima"]
 	B -> B1
 	B -> B2
 	B -> B3
-	C1 [label="Zona-5, DCC, Dhaka"]
-	C2 [label="Datos hospitalarios (2005-2009)"]
-	C3 [label="Variables climáticas: Temperatura, Lluvia, Humedad"]
-	C4 [label="Modelos ARIMA y Regresión de Poisson"]
+	C1 [label="Zona-5, 
+ DCC, Dhaka"]
+	C2 [label="Datos hospitalarios
+ (2005-2009)"]
+	C3 [label="Variables climáticas:
+  Temperatura, Lluvia, Humedad"]
+	C4 [label="Modelos ARIMA y 
+ Regresión de Poisson"]
 	C -> C1
 	C -> C2
 	C -> C3
 	C -> C4
-	D1 [label="Casos hospitalizados: 1902"]
+	D1 [label="Casos 
+ hospitalizados: 
+ 1902"]
 	D2 [label="Pico en Agosto"]
-	D3 [label="Días lluviosos aumentan casos en el mes siguiente"]
+	D3 [label="Días lluviosos 
+ aumentan casos 
+ en el mes siguiente"]
 	D -> D1
 	D -> D2
 	D -> D3
-	E1 [label="Dengue durante todo el año"]
+	E1 [label="Dengue durante 
+ todo el año"]
 	E2 [label="Asociación significativa con días lluviosos"]
-	E3 [label="Recomendación: Iniciar campañas en Mayo"]
+	E3 [label="Recomendación: 
+ Iniciar campañas en Mayo"]
 	E -> E1
 	E -> E2
 	E -> E3
