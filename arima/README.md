@@ -4,7 +4,7 @@
 
 1. Pasar lo de la definición de las variables objetivo
 
-|Variables|Descripción de la variables|
+|**Nombre Variables**|**Descripción de la variables**|
 |---------|---------------------------|
 |||
 |||
