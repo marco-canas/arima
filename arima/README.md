@@ -4,11 +4,11 @@
 
 1. Pasar lo de la definición de las variables objetivo
 
-|**Nombre Variables**|**Descripción de la variables**|
-|---------|---------------------------|
-|||
-|||
-|||
+|Símbolo|**Nombre Variables**|**Descripción de la variables**|
+|---------|---------------------------||
+||||
+||||
+||||
 
 
 
