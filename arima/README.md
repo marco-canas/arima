@@ -5,7 +5,7 @@
 1. Pasar lo de la definición de las variables objetivo
 
 |Símbolo|**Nombre Variables**|**Descripción de la variables**|
-|---------|---------------------------||
+|-------|--------------------|-------------------------------|
 ||||
 ||||
 ||||
