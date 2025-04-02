@@ -2,5 +2,9 @@
 
 ## Tarea 
 
-1. Pasar lo de la definición de las variables objetivo 
+1. Pasar lo de la definición de las variables objetivo
+
+|variables|Descripción de la variables|
+|---------|---------------------------|
+
 
