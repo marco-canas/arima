@@ -2,14 +2,15 @@
 
 ## Tarea 
 
-1. Pasar lo de la definición de las variables objetivo
+1. Pasar lo de la definición de las **variables objetivo**
 
-|Símbolo|**Nombre Variables**|**Descripción de la variables**|
-|-------|--------------------|-------------------------------|
-||||
-||||
-||||
+|Símbolo|**Nombre Variables**|**Descripción de la variables**|Naturaleza estadística|Tarea de ml asociada a la variabla|
+|-------|--------------------|-------------------------------|-|-|
+||||||
+||||||
+||||||
 
-
+2. Determine la naturaleza estadística de estas varoiables 
+# Los logros de hoy 
 
 
