@@ -6,6 +6,8 @@
 
 |Símbolo|**Nombre Variables**|**Descripción de la variables**|Naturaleza estadística|Tarea de ml asociada a la variabla|
 |-------|--------------------|-------------------------------|-|-|
+|n_casos|Número de casos||||
+||||||
 ||||||
 ||||||
 ||||||
