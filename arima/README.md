@@ -15,4 +15,8 @@
 2. Determine la naturaleza estadística de estas varoiables 
 # Los logros de hoy 
 
+1. Se realizó primer gráfico de *canal endémico* con datos artificiales.
+2. Se confirmaron cuatro variables objetivo
+3. Repasamos temas de estadística.
+4. Tarea Intervalos de confianza, la distribusión poisson. 
 
