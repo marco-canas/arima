@@ -26,7 +26,7 @@ Esta es una estructura detallada para un curso especializado en **ARIMA aplicado
    - ¿Por qué ARIMA para predicción de enfermedades?  
    - Caso de éxito: Modelado de malaria en Urabá (ejemplo regional).  
 
-**Actividad:** Análisis exploratorio de dataset real de Caucasia (2008-2025) con Python/Pandas.  
+**Actividad:** Análisis exploratorio de dataset real de Caucasia (2008-2025) con Python/Pandas/Matplotlib.  
 
 ---
 
@@ -40,7 +40,7 @@ Esta es una estructura detallada para un curso especializado en **ARIMA aplicado
    - Identificación visual de órdenes con correlogramas.  
 3. **Metodología Box-Jenkins:**  
    - Identificación → Estimación → Diagnóstico.  
-   - Herramientas: `statsmodels` (Python) o `forecast` (R).  
+   - Herramientas: `statsmodels` (Python) y su módulo para predicción `statsmodels.tsa.arima.model`.  
 
 **Actividad:** Modelado ARIMA para temperatura mensual en Caucasia (1990-2023).  
 
