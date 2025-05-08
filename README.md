@@ -10,7 +10,7 @@
 Se Logró leer el anteproyecto de grado de la estudiante para, según este, diseñar el plan de estudio de ARIMA.  
 Se realizó la sesión en el horario de 6 a 7 de la noche.  
 
-**Tarea:** redactar el plan de estudio de ARIMA en GitHub de acuerdo a anteproyecto de grado. Entrega: Sábado 10 de mayo a las 8 de la mañana. 
+**Tarea para la estudiante:** redactar el plan de estudio de ARIMA en GitHub de acuerdo a anteproyecto de grado. Entrega: Sábado 10 de mayo a las 8 de la mañana. 
 
 
 
