@@ -23,8 +23,8 @@ Se realizó la sesión en el horario de 6 a 7 de la noche.
 
 |Símbolo|**Nombre Variables**|**Descripción de la variables**|Naturaleza estadística|Tarea de ml asociada a la variabla|
 |-------|--------------------|-------------------------------|-|-|
-|n_casos|Número de casos||||
-||||||
+|n_casos|Número de casos|Total de casos reportados de dengue por semana en el municipio de Caucasia|Cuantitativa continua (serie temporal)|Variable objetivo. Predicción / regresión|
+|temp_prom|Temperatura promedio semanal||||
 ||||||
 ||||||
 ||||||
