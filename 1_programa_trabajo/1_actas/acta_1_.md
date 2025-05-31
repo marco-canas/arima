@@ -1,6 +1,6 @@
-Con gusto. A continuación te presento un diseño de acta en formato Markdown para la sesión del sábado 24 de mayo de 2025, enfocada en el monitoreo del cumplimiento del cronograma del trabajo de grado de la estudiante de Biología, Janis Zúñiga Ortega, en la línea de modelado ARIMA. Puedes usar este diseño como plantilla para futuras actas también.
+A continuación te presento un diseño de acta en formato Markdown para la sesión del sábado 24 de mayo de 2025, enfocada en el monitoreo del cumplimiento del cronograma del trabajo de grado de la estudiante de Biología, Janis Zúñiga Ortega, en la línea de modelado ARIMA. Puedes usar este diseño como plantilla para futuras actas también.
 
-Acta de Asesoría de Trabajo de Grado
+# Acta de Asesoría de Trabajo de Grado
 Sábado 24 de mayo de 2025
 
 📌 Universidad de Antioquia — Campus Caucasia
@@ -33,11 +33,11 @@ Monitoreo del cumplimiento del cronograma
 
 | Actividad                              | Cumplida | Observaciones                               |
 | -------------------------------------- | -------- | ------------------------------------------- |
-| Carga de datos                         | ✅ Sí     | Se utilizó pandas.read\_csv() correctamente |
-| Verificación de estructura semanal     | ✅ Sí     | Confirmada alineación de fechas             |
-| Revisión de duplicados y valores nulos | ✅ Sí     | Hay nulos en humedad relativa               |
-| Validación de fechas epidemiológicas   | ✅ Sí     | Coinciden con semanas ISO                   |
-| Documentación de variables y unidades  | ✅ Sí     | Se registró en cuaderno de trabajo          |
+| Carga de datos                         | Sí       | Se utilizó pandas.read\_csv() correctamente |
+| Verificación de estructura semanal     | No       | Confirmada alineación de fechas             |
+| Revisión de duplicados y valores nulos | No       | Hay nulos en humedad relativa               |
+| Validación de fechas epidemiológicas   | No       | Coinciden con semanas ISO                   |
+| Documentación de variables y unidades  | No       | Se registró en cuaderno de trabajo          |
 
 Acuerdos y compromisos
 
@@ -57,4 +57,3 @@ Firma de la estudiante:
 
 Janis Zúñiga Ortega
 
-¿Deseas que te lo genere en formato .docx listo para imprimir o compartir?

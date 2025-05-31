@@ -4,7 +4,7 @@
 
 ---
 
-## 🗓️ Mayo 24 – Mayo 31, 2025  
+## Mayo 24 – Mayo 31, 2025  
 **Tarea:** Exploración de la base de datos epidemiológica y climática  
 **Objetivo:** Verificar la calidad, formato y continuidad temporal de los datos  
 **Desarrollo:**
@@ -16,7 +16,7 @@
 
 ---
 
-## 🗓️ Mayo 31 – Junio 7  
+## Mayo 31 – Junio 7  
 **Tarea:** Generar visualizaciones exploratorias de las series temporales  
 **Objetivo:** Identificar tendencias, estacionalidades y valores atípicos  
 **Desarrollo:**
