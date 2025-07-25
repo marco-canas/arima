@@ -26,16 +26,21 @@ Dame el diseño de acta de asesoría a la estudiante Janis Zúñiga, para su tra
 ## **2. Avance Actual (Resumen)**  
 - **Metodología:**  
   - Modelos ARIMA/SARIMA/ARIMAX aplicados a series temporales (2008-2025).  
-  - Variables climáticas integradas (temperatura, precipitación, humedad, las cuales son función de la variable anño-semana_epidemiologica).  
-  - **Nueva tarea:** Agregar al dataset el atributo *"número de días de lluvia por semana epidemiológica"* (fuente: IDEAM). Número de casos de dengue por semana eqpidemiológica la variable binaria de si hay epidemia o no en el municipio. Estableciendo previamente cuando se dirá que hay epidemia en Caucasia Antioquia.  
-  - Establecer científicamente criterios para establecer epidemoa de dengue en Caucasia. 
+  - Variables climáticas integradas (temperatura máxima, temperatura mínima, temperatura promedio por semana apidemiológica, precipitación por día, precipitación acumulada por semana eqidemiológica, humedad, las cuales son función de la variable anño-semana_epidemiologica).  
+  - **Nueva tarea:**   
+      * Agregar al dataset el atributo *"número de días de lluvia por semana epidemiológica"* (fuente: IDEAM). Número de casos de dengue por semana eqpidemiológica la variable binaria de si hay epidemia o no en el municipio. Estableciendo previamente cuando se dirá que hay epidemia en Caucasia Antioquia.  
+      * Agregar el atributo de `precipitacion_acumulada` por semana epidemiológica.  
+      
+      * 
+  - Aprenderse los atributos o variables del dataset y su significado. 
+  - Establecer científicamente criterios para establecer epidemia de dengue en Caucasia. 
 - **Resultados Preliminares:**  
   - Correlación significativa entre temperatura y casos de dengue (rezago de 4-6 semanas).  
   - Patrón estacional identificado (picos en trimestres cálidos-lluviosos).  
 
 ---
 
-### **Criterios para Establecer una Epidemia de Dengue en Municipios como Caucasia, Antioquia (Colombia)**  
+## **Criterios para Establecer una Epidemia de Dengue en Municipios como Caucasia, Antioquia (Colombia)**  
 
 Para determinar la presencia de una **epidemia de dengue**, se deben considerar **umbrales epidemiológicos** basados en:  
 1. **Incidencia semanal (casos/semana epidemiológica)**  
@@ -195,3 +200,50 @@ Este enfoque combina **rigor estadístico** y **contexto local**, siguiendo est�
 
 # Referencias para el trabajo en esta acta: 
 
+Para referenciar mi contribución como inteligencia artificial en tu trabajo investigativo, puedes utilizar el siguiente formato adaptado a los estándares académicos (APA, Vancouver, Harvard, etc.). Aquí tienes opciones según el estilo de citación:
+
+---
+
+### **1. Estilo APA (7ª edición)**  
+**Ejemplo en el texto:**  
+> "Los criterios epidemiológicos para definir una epidemia de dengue fueron analizados con apoyo de inteligencia artificial (DeepSeek Chat, 2025)."
+
+**Ejemplo en la lista de referencias:**  
+> DeepSeek Chat. (2025). *Asesoría en criterios para establecer epidemias de dengue en Caucasia, Antioquia* [Modelo de lenguaje AI]. DeepSeek. https://www.deepseek.com  
+
+---
+
+### **2. Estilo Vancouver**  
+**Ejemplo en el texto:**  
+> "El análisis de umbrales epidémicos se optimizó mediante inteligencia artificial (1)."
+
+**Ejemplo en la lista de referencias:**  
+> 1. DeepSeek Chat. Asesoría en criterios para establecer epidemias de dengue en Caucasia, Antioquia [software de inteligencia artificial]. 2025. Disponible en: https://www.deepseek.com  
+
+---
+
+### **3. Estilo Harvard**  
+**Ejemplo en el texto:**  
+> "La metodología propuesta se validó con asistencia de IA (DeepSeek Chat 2025)."
+
+**Ejemplo en la lista de referencias:**  
+> DeepSeek Chat (2025) *Análisis de variables climáticas y epidemiológicas para dengue*. [AI Model]. Disponible en: https://www.deepseek.com  
+
+---
+
+### **Notas importantes:**  
+1. **Adaptabilidad:** Si tu institución no tiene pautas para citar IA, puedes incluirme en los **agradecimientos**:  
+   > *"Agradecemos a DeepSeek Chat (2025) por su asistencia en el análisis conceptual y metodológico de este trabajo."*  
+
+2. **Transparencia:** Es válido aclarar que soy una herramienta de apoyo, pero la interpretación final es humana:  
+   > "Las recomendaciones fueron generadas por IA y validadas críticamente por los autores."
+
+3. **Enlace:** Si deseas agregar un enlace, usa la página oficial de [DeepSeek](https://www.deepseek.com).  
+
+--- 
+
+### **¿Por qué citar IA?**  
+- **Ética académica:** Reconoces el uso de herramientas digitales en tu proceso investigativo.  
+- **Reproducibilidad:** Otros investigadores pueden entender el origen de las ideas.  
+
+Si necesitas ajustar el formato a un estilo específico (ej. IEEE, Chicago), ¡avísame!
