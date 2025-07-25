@@ -1,0 +1,89 @@
+Aquí tienes una estructura detallada para una **defensa de tesis de 10 minutos** basada en tu proyecto sobre dengue y modelos ARIMA en Caucasia, Antioquia. Incluye tiempos aproximados y énfasis en los puntos clave:
+
+---
+
+### **Estructura de la Defensa (10 minutos)**  
+**Título:** *"Análisis de la variabilidad temporal del número de casos de dengue y su relación con variables climáticas en Caucasia, Antioquia"*  
+
+#### **1. Introducción (2 minutos)**  
+- **Contexto global/local (30 segundos):**  
+  - Dengue como problema de salud pública (datos OMS/OPS: 14M casos globales en 2024).  
+  - Situación en Colombia y Caucasia (ej: 3,198 casos en 2024, aumento del 116% vs 2023).  
+- **Justificación (30 segundos):**  
+  - Brecha en estudios locales que vinculen clima-dengue con modelos ARIMA.  
+  - Relevancia para el macroproyecto CODI (Sistema de Alerta Temprana).  
+- **Objetivo general (30 segundos):**  
+  *"Determinar la relación entre variables climáticas y casos de dengue mediante modelos ARIMA para identificar patrones predictivos"*.  
+- **Hipótesis (30 segundos):**  
+  *"Las variables climáticas influyen significativamente en la variabilidad temporal de casos, permitiendo predecir brotes"*.
+
+---
+
+#### **2. Metodología (2.5 minutos)**  
+- **Diseño (30 segundos):**  
+  - Estudio longitudinal con datos 2008-2024 (series temporales semanales).  
+  - Fuentes: Secretaría de Salud de Caucasia (casos), IDEAM/NASA POWER (clima).  
+- **Modelos ARIMA/SARIMA/ARIMAX (1 minuto):**  
+  - Explicación breve de los componentes (p, d, q) y variables exógenas (temperatura, lluvia).  
+  - Herramientas: Python (statsmodels, pmdarima).  
+- **Análisis (1 minuto):**  
+  - Prueba de Dickey-Fuller (estacionariedad).  
+  - Métricas de evaluación: AIC, RMSE, MAPE.  
+
+**Visual:** Mostrar gráfico de flujo metodológico (1 diapositiva).  
+
+---
+
+#### **3. Resultados Clave (3 minutos)**  
+- **Hallazgos principales (1.5 minutos):**  
+  - Correlación significativa entre **temperatura** y casos (rezago 4-6 semanas).  
+  - Patrón estacional: picos en trimestres cálidos-lluviosos (ej: Semana epidemiológica 25-30).  
+  - Modelo ARIMAX óptimo: AIC=1204, RMSE=18.2 (precisión del 78%).  
+- **Gráficos (1 minuto):**  
+  - Serie temporal de casos vs. temperatura (destacar semanas epidémicas).  
+  - Residuos del modelo (validación de supuestos).  
+- **Impacto (30 segundos):**  
+  - Posibilidad de predecir brotes con 4-6 semanas de anticipación.  
+
+**Visual:** 2-3 diapositivas con gráficos clave.  
+
+---
+
+#### **4. Discusión y Conclusiones (2 minutos)**  
+- **Relación con literatura (1 minuto):**  
+  - Coincide con estudios como Rúa-Uribe et al. (2013) en Medellín y Altassan et al. (2024) en Arabia Saudita.  
+  - Diferencia: Caucasia muestra mayor sensibilidad a lluvias intensas (vs. humedad en otros contextos).  
+- **Limitaciones (30 segundos):**  
+  - Datos climáticos satelitales pueden tener sesgos locales.  
+- **Recomendaciones (30 segundos):**  
+  - Integrar modelo al Sistema de Alerta Temprana del Bajo Cauca.  
+  - Replicar metodología en municipios con clima similar.  
+
+**Visual:** Tabla comparativa con otros estudios (1 diapositiva).  
+
+---
+
+#### **5. Cierre (30 segundos)**  
+- **Contribución:**  
+  - Herramienta cuantitativa para la toma de decisiones en salud pública.  
+- **Agradecimiento:**  
+  - Tutores, equipo de investigación, instituciones colaboradoras.  
+
+**Visual:** Diapositiva final con título del proyecto y contacto.  
+
+---
+
+### **Tips para la Exposición**  
+1. **Dominio del tiempo:**  
+   - Practica con un cronómetro. Prioriza resultados y discusión.  
+2. **Interacción con diapositivas:**  
+   - Usa gráficos simples y texto mínimo (ej: "Temperatura ↑ → Casos ↑ con rezago").  
+3. **Preparación para preguntas:**  
+   - Anticipa consultas técnicas (ej: "¿Por qué no usó redes neuronales?") y de impacto ("¿Cómo aplicaría esto en otros municipios?").  
+
+**Ejemplo de frase para empezar:**  
+*"El dengue es una enfermedad que ha crecido exponencialmente en Caucasia, pero ¿podemos predecir sus brotes usando el clima? Hoy les mostraré cómo los modelos ARIMA nos dan una respuesta."*  
+
+--- 
+
+Esta estructura equilibra rigor científico y claridad, ajustándose a 10 minutos. ¡Mucho éxito!

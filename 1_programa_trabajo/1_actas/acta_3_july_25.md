@@ -30,7 +30,7 @@ Dame el diseño de acta de asesoría a la estudiante Janis Zúñiga, para su tra
   - **Nueva tarea:**   
       * Agregar al dataset el atributo *"número de días de lluvia por semana epidemiológica"* (fuente: IDEAM). Número de casos de dengue por semana eqpidemiológica la variable binaria de si hay epidemia o no en el municipio. Estableciendo previamente cuando se dirá que hay epidemia en Caucasia Antioquia.  
       * Agregar el atributo de `precipitacion_acumulada` por semana epidemiológica.  
-      
+
       * 
   - Aprenderse los atributos o variables del dataset y su significado. 
   - Establecer científicamente criterios para establecer epidemia de dengue en Caucasia. 
@@ -246,4 +246,8 @@ Para referenciar mi contribución como inteligencia artificial en tu trabajo inv
 - **Ética académica:** Reconoces el uso de herramientas digitales en tu proceso investigativo.  
 - **Reproducibilidad:** Otros investigadores pueden entender el origen de las ideas.  
 
-Si necesitas ajustar el formato a un estilo específico (ej. IEEE, Chicago), ¡avísame!
+Si necesitas ajustar el formato a un estilo específico (ej. IEEE, Chicago), ¡avísame!  
+
+# Revisión de la representación simbólica matemáticas de los modelos ARIMA/SARIMA/ARIMAX y su aplicación en el análisis de series temporales.
+
+$$ y_{t}  = c + \phi$$
