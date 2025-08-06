@@ -1,18 +1,20 @@
 # **Acta de Asesoría de Trabajo de Grado**  
-**Sábado 14 de junio de 2025**  
+**Miércoles 6 de Agosto de 2025**  
 
-📌 **Universidad de Antioquia — Campus Caucasia**  
-📘 **Programa:** Biología  
-👩‍🎓 **Estudiante:** Janis Zúñiga Ortega  
-👨‍🏫 **Asesor:** Marco Julio Cañas Campillo  
-📂 **Línea de investigación:** Modelado ARIMA de series temporales climáticas y casos de dengue  
+**Universidad de Antioquia — Campus Caucasia**  
+**Programa:** Biología  
+**Estudiante:** Janis Zúñiga Ortega  
+ **Asesor:** Marco Julio Cañas Campillo  
+**Línea de investigación:** Modelado ARIMA de series temporales climáticas y casos de dengue  
 
 ---
 
 ### **Objetivo de la sesión**  
 Evaluar la distribución de los datos, determinar si son normales o no, y aplicar el análisis de correlación entre variables climáticas y casos de dengue.
 
----
+1. Revisar la estructuración de los datos: los atributos de año y semana epidemioólogica que sean independientes. 
+2. Hacer la emulación de datos reales con datos artificiales generados con la función `make_time_series` de la biblioteca `pykalman` para simular una serie temporal de casos de dengue.  (Encargado el profe Marco)
+
 
 ### **Resumen de actividades programadas para la semana actual**  
 1. Aplicar la prueba de normalidad de Shapiro-Wilk para cada variable.  
