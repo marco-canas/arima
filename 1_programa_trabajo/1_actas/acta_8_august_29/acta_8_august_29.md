@@ -331,13 +331,19 @@ Perfecto, Marco Julio 🙌. Te redacto el **Acta No. 8** del **29 de agosto de 2
    $$
    X_{i, t-k_{i}}
    $$
-6. Trabajar paralelamente los datos endogenos y exógenos del intervalo de tiempo de 2022 al 2025 de las fuentes: Nasa-Power, IDEAM, world clim, Facom. 
+6. Trabajar paralelamente los datos endogenos y exógenos del intervalo de tiempo de 2021 al 2025 de las fuentes: Nasa-Power, IDEAM, world clim, Facom. 
 ---
 
-## 📌 Desarrollo de la reunión
 
-* Se ejecutaron códigos exploratorios en **Python (Jupyter Notebooks)** para graficar series históricas de dengue y visualizar tendencias.
-* Se discutió la ecuación general de SARIMAX en términos de matrices y su utilidad para incluir variables exógenas.
+
+## Desarrollo de la reunión
+
+* Se ejecutaron códigos exploratorios en **Python (Jupyter Notebooks)** para graficar series históricas de dengue y visualizar tendencias para elaboprar un gráfico para la presentación del proyecto de grado de Janis el Lunes 1 de septiembre (Socialización de la propuesta de grado).    
+  
+* Se discutió la ecuación general de SARIMAX en términos de matrices y su utilidad para incluir variables exógenas.  
+
+$$  $$
+
 * Se planificó la generación de datos artificiales que representen las dinámicas climáticas y epidemiológicas locales, respetando las frecuencias temporales.
 * Se revisaron técnicas para identificar rezagos significativos mediante funciones de autocorrelación (ACF, PACF) y correlaciones cruzadas con variables exógenas.
 * Se acordó la transformación estructural de las bases de datos para que cada variable exógena quede indexada con su respectivo desfase temporal.
