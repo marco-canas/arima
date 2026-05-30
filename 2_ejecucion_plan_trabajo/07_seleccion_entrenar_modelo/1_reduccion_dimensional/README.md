@@ -1,0 +1,1 @@
+dame una función de python que le entre el dataframe de datos meteorologicos con rezago y de número de casos de dengue, que le entre también la tasa de testeo y entregue el dataframe con solo las variables meteorológicas menos correlacionadas entre si, pero más correlacionadas con la variable objetivo de casos de dengue. Pero que el tipo de correlación sea la de spierman. 
