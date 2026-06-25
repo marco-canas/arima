@@ -1,14 +1,3 @@
-Prompt  
-
-Dame esta función de usuario de una forma que pueda pegarla en un archivo .py para poder tenerla como un módulo de Python que sirva para predecir casos de dengue a partir del año y la semana epidemiológica usando los datos meteorológicos y epidemiológicos de los que disponemos  
-
-Aquí tienes el código estructurado exclusivamente para funcionar como un **módulo independiente de Python**. Puedes guardarlo en un archivo llamado `predictor_dengue_sat.py`.
-
-Este módulo contiene la función de usuario con las rutas exactas del SAT que especificaste, está completamente blindado contra errores de celdas vacías (`NaN`) en Excel y está listo para ser importado desde cualquier otra sección de tu proyecto o terminal de comandos.
-
-### Código del Módulo (`predictor_dengue_sat.py`)
-
-```python
 """
 MÓDULO SAT: Predicciones Puntuales de Casos de Dengue mediante ARIMAX.
 Este archivo funciona como un módulo reutilizable de Python.
@@ -22,7 +11,7 @@ import statsmodels.api as sm
 
 # CONFIGURACIÓN DE RUTAS INTERNAS DEL MÓDULO (Rutas SAT especificadas)
 RUTA_METRICAS = r"C:\Users\marco\Documentos\investigacion\arima\08_sat\1_scripts\1_modulo_prediccion_casos_dengue\metricas_modelos_arimax.xlsx"
-RUTA_DATASET_SAT = r"C:\Users\marco\Documentos\investigacion\arima\08_sat\1_scripts\1_modulo_prediccion_casos_dengue\reducido_lasso_solo_dengue.csv" 
+RUTA_DATASET_SAT = r"C:\Users\marco\Documentos\investigacion\arima\08_sat\1_scripts\1_modulo_prediccion_casos_dengue\reducido_lasso_solo_dengue.csv"
 
 
 def _obtener_mejor_orden_arimax(ruta_excel=RUTA_METRICAS):
@@ -91,22 +80,26 @@ def predecir_casos_dengue(ano, semana_epi, ruta_datos=RUTA_DATASET_SAT):
     X_futuro = ventana_historica[columnas_exog].iloc[[-1]]  # Fila 't' actual con clima contemporáneo
     
     # 8. Ajustar la estructura lineal del ARIMAX con la memoria temporal cargada
-    model = sm.tsa.statespace.SARIMAX(
-        y_hist, 
-        exog=X_hist, 
-        order=orden_arimax,
-        enforce_stationarity=False,
-        enforce_invertibility=False
-    )
-    model_fit = model.fit(disp=False)
+    # --- Agregamos una instrucción para silenciar localmente la advertencia de convergencia ---
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        model = sm.tsa.statespace.SARIMAX(
+            y_hist, 
+            exog=X_hist, 
+            order=orden_arimax,
+            enforce_stationarity=False,
+            enforce_invertibility=False
+        )
+        model_fit = model.fit(disp=False)
     
     # 9. Ejecutar la predicción puntual (Forecast de 1 paso hacia adelante)
     prediccion = model_fit.forecast(steps=1, exog=X_futuro).values[0]
     observado = ventana_historica['casos_dengue'].iloc[-1]
     
-    # 10. Control lógico-matemático (los casos de dengue no pueden ser negativos)
-    casos_predichos = round(max(0.0, prediccion), 2)
-    casos_observados = round(observado, 2)
+    # 10. Control lógico-matemático y conversión a tipos nativos de Python
+    casos_predichos = max(0, int(prediccion))
+    casos_observados = int(observado)  # Forzamos conversión para evitar el np.float64
     
     return casos_predichos, casos_observados
 
@@ -115,24 +108,3 @@ def predecir_casos_dengue(ano, semana_epi, ruta_datos=RUTA_DATASET_SAT):
 if __name__ == "__main__":
     print("--- Módulo predictor_dengue_sat cargado exitosamente ---")
     print(f"Buscando datos meteorológicos en: {RUTA_DATASET_SAT}")
-
-```
-
----
-
-### Cómo usar este módulo desde cualquier otra terminal o script
-
-Al estar empaquetado de forma limpia, puedes llamarlo desde cualquier script que crees en la misma carpeta (`C:\Users\marco\Documentos\investigacion\arima\08_sat\1_scripts`).
-
-**Ejemplo de uso externo:**
-
-```python
-import predictor_dengue_sat as pds
-
-# Invocar la función enviando el año y la semana deseada
-prediccion, real = pds.predecir_casos_dengue(2024, 15)
-
-print(f"Casos estimados por ARIMAX: {prediccion}")
-print(f"Casos registrados en salud pública: {real}")
-
-```
