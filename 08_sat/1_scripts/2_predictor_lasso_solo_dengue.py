@@ -17,46 +17,26 @@ RUTA_METRICAS = r"C:\Users\marco\Documentos\investigacion\arima\06_entrenar_mode
 
 def obtener_mejor_configuracion_arimax(ruta_excel=RUTA_METRICAS):
     """
-    Lee el reporte Excel de resultados buscando dinámicamente la fila de encabezados
-    para extraer el orden (p,d,q) del modelo con el menor MAE Promedio.
+    Versión simplificada y directa para evitar expresiones generadoras en caché.
     """
     if not os.path.exists(ruta_excel):
         raise FileNotFoundError(f"No se encontró el reporte de métricas en: {ruta_excel}")
         
-    # 1. Cargamos el Excel completo inicialmente sin asumir ninguna cabecera fija
-    df_crudo = pd.read_excel(ruta_excel, header=None)
+    # Saltamos las 2 filas decorativas de Excel directamente
+    df_metricas = pd.read_excel(ruta_excel, skiprows=2)
     
-    # 2. Buscamos dinámicamente en qué fila se encuentra la columna 'MAE Promedio'
-    fila_cabecera = None
-    for idx_fila, fila in df_crudo.iterrows():
-        # Convertimos la fila a string y buscamos si contiene la métrica objetivo
-        fila_str = fila.astype(str).str.strip().values
-        if any('MAE Promedio' in celda or 'MAE Promedio' in celda.replace('ó', 'o') for celda in fila_str):
-            fila_cabecera = idx_fila
-            break
-            
-    if fila_cabecera is None:
-        raise KeyError("No se pudo localizar de forma automática la fila de encabezados que contiene 'MAE Promedio' en el Excel.")
+    # Forzar nombres limpios y planos de columnas inmediatamente
+    df_metricas.columns = ["Partición", "Criterio Selección", "Orden (p,d,q)", "MAE Entrenamiento", "MAE Testeo", "MAE Promedio"]
     
-    # 3. Volvemos a leer el Excel usando la fila exacta que encontramos como cabecera
-    df_metricas = pd.read_excel(ruta_excel, header=fila_cabecera)
+    # Encontrar la fila con el menor MAE Promedio
+    fila_optima = df_metricas.loc[df_metricas["MAE Promedio"].idxmin()]
     
-    # 4. Limpieza estándar de espacios en las columnas cargadas
-    df_metricas.columns = df_metricas.columns.str.strip()
-    
-    # 5. Localización flexible de los nombres de columnas mapeadas
-    nombre_columna_mae = [c for c in df_metricas.columns if 'MAE Promedio' in c or 'MAE Promedio' in c.replace('ó', 'o')][0]
-    col_orden = [c for c in df_metricas.columns if 'Orden' in c][0]
-    col_particion = [c for c in df_metricas.columns if 'Partici' in c][0]
-    col_criterio = [c for c in df_metricas.columns if 'Criterio' in c][0]
-    
-    # 6. Encontrar la fila con el menor MAE Promedio y extraer los parámetros
-    fila_optima = df_metricas.loc[df_metricas[nombre_columna_mae].idxmin()]
-    orden_tuple = ast.literal_eval(str(fila_optima[col_orden]))
+    # Convertir el string del orden a tupla
+    orden_tuple = ast.literal_eval(str(fila_optima["Orden (p,d,q)"]))
     
     return {
-        'particion': fila_optima[col_particion],
-        'criterio': fila_optima[col_criterio],
+        'particion': fila_optima["Partición"],
+        'criterio': fila_optima["Criterio Selección"],
         'orden': orden_tuple
     }
 
